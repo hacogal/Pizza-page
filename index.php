@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cheesy Pizza</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Cheesy Pizza</h1>
+        <img src="img/TCP.jpeg" height="300" width="300" alt="logo TCP" />
+        <h2>The best flavor, fresh and delicious</h2>
+    </header>
+    <main>
+        <fieldset>
+        <legend><h2>Build your own pizza</h2></legend>
+        <form action="order.php" method="get">
+        <div>
+            <legend><strong>Number of Pizzas</strong></legend>
+            <select id="NumberofPizzas" name="NumberofPizzas">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <legend><strong>Size</strong></legend>
+            <select id="Size" name="Size">
+                <option>6 - Small</option>
+                <option>8 - Medium </option>
+                <option>12 - Large</option>
+                <option>16 - Extra Large</option>
+            </select>
+
+            <legend><strong>Shape</strong></legend>
+            <select id="Shape" name="Shape">
+                <option>Round</option>
+                <option>Square</option>
+            </select>
+
+            <legend><strong>Toppin1</strong></legend>
+            <select id="Toppin1" name="Toppin1">
+                <option>Pepperoni</option>
+                <option>Bacon</option>
+                <option>Onion</option>
+                <option>Tomato</option>
+            </select>
+
+            <legend><strong>Toppin2</strong></legend>
+            <select id="Toppin2" name="Toppin2">
+                <option>Pepperoni</option>
+                <option>Bacon</option>
+                <option>Onion</option>
+                <option>Tomato</option>
+            </select>
+
+            <legend><strong>Crust</strong></legend>
+            <select id="Crust" name="Crust">
+                <option>Thin</option>
+                <option>Regular</option>
+                <option>Stuffed</option>
+                <option>Cracker</option>
+            </select>
+
+            <legend><strong>Delivery options</strong></legend>
+            <select id="Delivery" name="Delivery">
+                <option>To go</option>
+                <option>Delivery</option>
+                <option>Eat in</option>
+            </select>
+
+            
+        </div>
+        </fieldset>
+        <fieldset>
+            
+            <legend><h2>Contact Information</h2></legend>
+            <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required  />
+            
+            <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            </p>
+            <p>
+            <label for="phone">Phone:</label>
+            <input id="phone" type="phone" name="phone"/>
+            </p>
+            <p>
+            <label for="address">Address:</label>
+            <input type="address" id="address" name="address" required />
+            </p>
+            <p>
+            <label for="msg">More details:</label>
+            <textarea id="msg" name="msg"></textarea>
+            </p>
+            <button type="reset">Clear Order</button>
+            <button type="submit">Make Order</button>
+            </div>
+         </fieldset>
+         
+        </form>
+
+
+    </main>
+    <footer>
+        <p><small>©The Cheesy Pizza Inc. All rights reserved</small></p>
+
+    </footer>
+    
+</body>
+</html>
